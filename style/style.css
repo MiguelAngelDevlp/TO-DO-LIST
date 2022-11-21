@@ -1,0 +1,199 @@
+*{  
+margin-top: 4px;
+}
+
+#notes{
+    margin-left: 750px;
+}
+
+h1{
+margin-left: 95%;
+font-size: 15px;
+}
+
+h3{
+margin-top: 260px;
+font-size: 30px;
+justify-content: center;
+}
+
+.delete{
+
+        width: 50px;
+        height: 20px;
+        cursor: pointer;
+        align-items: center;
+        background: red;
+        border: none;
+        border-radius: 5px;
+        box-shadow: 1px 1px 3px rgba(0,0,0,0.15);
+        background: #e62222;
+       }
+
+       #note-input{
+        margin-left: -30px;
+       }
+       
+       button, button span {
+        transition: 200ms;
+       }
+       
+       button .text {
+        transform: translateX(35px);
+        color: white;
+        font-weight: bold;
+       }
+       
+       button .icon {
+        position: absolute;
+        border-left: 1px solid #c41b1b;
+        transform: translateX(110px);
+        height: 40px;
+        width: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+       }
+       
+       button svg {
+        width: 15px;
+        fill: #eee;
+       }
+       
+       button:hover {
+        background: #ff3636;
+       }
+       
+       button:hover .text {
+        color: transparent;
+       }
+       
+       button:hover .icon {
+        width: 150px;
+        border-left: none;
+        transform: translateX(0);
+       }
+       
+       button:focus {
+        outline: none;
+       }
+       
+       button:active .icon svg {
+        transform: scale(0.8);
+       }
+
+
+#tittle {
+    margin-left: 750px;
+
+}
+
+body{
+    background-image: url(../img/pizza.webp);
+    background-position-y: -150px;
+}
+
+.note-form{
+    margin-left: 800px;
+}
+
+#notes{
+list-style-image: url(../img/info-lg.svg);
+margin-left: 800px;
+}
+
+.button {
+    --color: #7a9cc6;
+    padding: 0.8em 1.7em;
+    background-color: transparent;
+    border-radius: .3em;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    transition: .5s;
+    font-weight: 400;
+    font-size: 10px;
+    border: 1px solid;
+    font-family: inherit;
+    text-transform: uppercase;
+    color: var(--color);
+    z-index: 1;
+   }
+   
+   .button::before, .button::after {
+    content: '';
+    display: block;
+    width: 50px;
+    height: 50px;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    border-radius: 50%;
+    z-index: -1;
+    background-color: var(--color);
+    transition: 1s ease;
+   }
+   
+   .button::before {
+    top: -1em;
+    left: -1em;
+   }
+   
+   .button::after {
+    left: calc(100% + 1em);
+    top: calc(100% + 1em);
+   }
+   
+   .button:hover::before, .button:hover::after {
+    height: 410px;
+    width: 410px;
+   }
+   
+   .button:hover {
+    color: rgb(10, 25, 30);
+   }
+   
+   .button:active {
+    filter: brightness(.8);
+   }
+   
+   
+.input {
+    line-height: 28px;
+    border: 2px solid transparent;
+    border-bottom-color: #777;
+    padding: .2rem 0;
+    outline: none;
+    background-color: transparent;
+    color: #0d0c22;
+    transition: .3s cubic-bezier(0.645, 0.045, 0.355, 1);
+   }
+   
+   .input:focus, input:hover {
+    outline: none;
+    padding: .2rem 1rem;
+    border-radius: 1rem;
+    border-color: #7a9cc6;
+   }
+   
+   .input::placeholder {
+    color: #777;
+   }
+   
+   .input:focus::placeholder {
+    opacity: 0;
+    transition: opacity .3s;
+   }
+
+
+   #note-input{
+    font-size: 20px;
+   }
+   
+   
+   
+
+   
+   
+   
+   
+   
