@@ -6,6 +6,7 @@ const noteSubmit = document.querySelector("#notes-submit")
 const noteList = document.getElementById("notes")
 const title = document.querySelector("#tittle")
 const removedAll = `<button class="delete" onclick="deleteNote(this)">Quitar</button>`
+const deleteAllIn = document.querySelector(".deleteAllIn")
 
 
 ///////////////metodo ternario (Si... es true entonces JSON.parse si no... [arr vacia])
@@ -59,5 +60,12 @@ tittle.onclick = () =>{
     }
 }
 //////////////
+deleteAllIn.onclick = (e) => {    
+    e.preventDefault()        
+    notesStorage = []
+    localStorage.setItem("notesStr", JSON.stringify(notesStorage))
+    notes.innerHTML = " "
+ };
+
 
 
